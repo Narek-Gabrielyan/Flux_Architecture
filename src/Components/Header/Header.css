@@ -1,0 +1,9 @@
+
+.Header {
+    background-color: darkgray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}

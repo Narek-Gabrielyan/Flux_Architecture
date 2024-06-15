@@ -1,0 +1,37 @@
+
+.Country {
+    padding: 0 8px;
+
+    .flags {
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+    .flags_arms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Arms_img {
+        width: 200px;
+    }
+
+    .btn {
+        text-align: center;
+        margin: 8px 0;
+        height: 30px;
+
+        > button {
+            height: 100%;
+            padding: 0 15px;
+            border: 1px solid black;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: green;
+            }
+        }
+    }
+}
