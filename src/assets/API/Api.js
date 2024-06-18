@@ -17,4 +17,11 @@ export const countriesAPI = {
       .get(`name/${name}`)
       .then((res) => dispatch(get_Country_AC(res.data)));
   },
+
+  get_Input_Country(dispatch, value) {
+    instance
+      .get(`name/${value}`)
+      .then((res) => dispatch(get_Country_AC(res.data)))
+      .catch((err) => console.error(err.message));
+  },
 };

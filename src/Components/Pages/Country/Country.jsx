@@ -7,6 +7,7 @@ import "./Country.css";
 
 export const Country = function () {
   const [state, dispatch] = useReducer(reducer, initState);
+  console.log(state);
   const { name } = useParams();
   const nav = useNavigate();
   const back = () => nav(-1);
@@ -15,7 +16,7 @@ export const Country = function () {
   }, []);
 
   const countrie = state.country[0];
-  //   console.log(countrie);
+    // console.log(countrie);
 
   return (
     countrie && (

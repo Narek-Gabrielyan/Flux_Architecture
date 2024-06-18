@@ -11,7 +11,7 @@ import "./App.css";
 
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initState)
-  // console.log(state)
+  console.log(state)
   useEffect(() => {
     countriesAPI.get_All_Countries(dispatch)
   },[])
@@ -26,5 +26,3 @@ export default function App() {
     </div>
   );
 }
-
-//  dispatch={dispatch}
